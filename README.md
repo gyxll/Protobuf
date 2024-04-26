@@ -1,0 +1,1 @@
+这是一个C# protobuf3的应用示例，其中包含proto协议生成C#类，并对协议进行编码和解码示例。另外还包括一个excel生成proto数据类型，并将excel数据编码为proto格式的字节码，当然开发过程中为了效率查找方面最好采用json格式。当项目release时再采用protobuf字节码格式。
