@@ -1,0 +1,45 @@
+// 指定版本
+syntax = "proto3";
+// C#中的namespace
+package ProtoTest;
+import "Person.proto";
+// 消息结果。
+message MsgResult {
+    // 结果码。
+    int32 code = 1;
+    // 错误消息。
+    string err_msg = 2;
+	//嵌套信息
+	Person personValue = 3;
+}
+ 
+// 接收包
+message TaskProtocol {
+    // 数据类型
+    int32 packType = 1;
+ 
+    // 具体数据
+    bytes content = 2;
+	
+ 
+}
+ 
+// 包的类型
+enum PackType {
+    LOGIN = 0;
+    CREATE_TASK = 2;
+    DELETE_TASK = 3;
+}
+ 
+message LoginPack{
+    string username = 1;
+}
+ 
+message LoginPack2{
+    string username = 1;
+}
+ 
+message CreateTaskPack{
+    string taskId = 1;
+    string taskName = 2;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+package Com.Dxll.Proto;
+
+message buffConfig{
+	//主键id
+	int32 id = 1;
+	//buff添加属性
+	string buff_name = 2;
+	//buff添加的属性值
+	string buff_value = 3;
+}
+
+message buffConfigData{
+	repeated buffConfig Config = 1;
+}

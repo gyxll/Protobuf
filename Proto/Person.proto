@@ -1,0 +1,8 @@
+syntax = "proto3";
+package ProtoTest;
+
+message Person {
+    string name = 1;
+    int32 age = 2;
+    repeated string phone_numbers = 3;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+package Com.Dxll.Proto;
+
+import "buff.proto";
+import "test.proto";
+
+message ConfigDatabase {
+	buffConfigData Buff = 1;
+	testConfigData Test = 2;
+}
